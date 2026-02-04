@@ -157,6 +157,8 @@ export default function App(){
                   dishId={dishId}
                   media={dishMedia}
                   lang={lang}
+                  menu={menuName}
+                  stage={stage}
                   ingredientIds={(item.ingredients || []).map(x=>x.id)}
                   isAdmin={adminMode}
                   adminToken={adminToken}
