@@ -11,7 +11,9 @@ export default function DishMediaHotspots({
   onHotspotClick,
   isAdmin,
   onSaveMedia,
-  adminToken
+  adminToken,
+  menu = "tasting",
+  stage = "published"
 }) {
   const wrapRef = useRef(null);
   const [edit, setEdit] = useState(false);
@@ -22,8 +24,12 @@ export default function DishMediaHotspots({
   const [drag, setDrag] = useState(null);
   const [strategy, setStrategy] = useState("auto");
   const [seed, setSeed] = useState(1910);
+  const [lightbox, setLightbox] = useState(false);
 
-  useEffect(() => { setDraft(media || null); }, [media]);
+  useEffect(() => {
+    setDraft(media || null);
+    setLoaded(false);
+  }, [media]);
 
   const hasImage = !!(media?.imageUrl);
   const hotspots = (draft?.hotspots || media?.hotspots || []);
@@ -47,10 +53,20 @@ export default function DishMediaHotspots({
   function onImgClick(e){
     if (!isAdmin || !edit) return;
     const { x, y } = getRelXY(e);
-    setDraft({
-      ...(draft || media || {}),
-      hotspots: [...hotspots, { x, y, ingredientId: "EDIT_ME_INGREDIENT_ID", role: "component", label: { en: "EDIT_ME", de: "EDIT_ME" } }]
-    });
+    const next = [
+      ...hotspots,
+      {
+        x,
+        y,
+        ingredientId: ingredientIds?.[0] || "EDIT_ME_INGREDIENT_ID",
+        role: "component",
+        label: {
+          en: ingredientIds?.[0] ? titleize(ingredientIds[0]) : "EDIT_ME",
+          de: ingredientIds?.[0] ? titleize(ingredientIds[0]) : "EDIT_ME"
+        }
+      }
+    ];
+    setDraft({ ...(draft || media || {}), hotspots: next });
   }
 
   function removeAt(idx){
@@ -79,8 +95,8 @@ export default function DishMediaHotspots({
           ...(adminToken ? { "Authorization": `Bearer ${adminToken}` } : {})
         },
         body: JSON.stringify({
-          menu: "tasting",
-          stage: "published",
+          menu,
+          stage,
           dishId,
           strategy,
           seed
@@ -183,6 +199,17 @@ export default function DishMediaHotspots({
           box-shadow: 0 18px 60px rgba(0,0,0,.45);
           white-space: nowrap;
         }
+        .hotspotControls label{
+          font-size: 12px;
+          opacity: .85;
+        }
+        .hotspotControls input, .hotspotControls select{
+          padding: 10px 10px;
+          border-radius: 12px;
+          border: 1px solid rgba(244,239,231,.10);
+          background: rgba(0,0,0,.20);
+          color: rgba(244,239,231,.92);
+        }
       `}</style>
 
       <div
@@ -279,7 +306,7 @@ export default function DishMediaHotspots({
           </button>
 
           {edit && (
-            <>
+            <div className="hotspotControls" style={{ display:"flex", gap:10, flexWrap:"wrap", alignItems:"flex-end" }}>
               <div className="field" style={{ minWidth: 240 }}>
                 <label>Auto-layout</label>
                 <select value={strategy} onChange={(e)=>setStrategy(e.target.value)}>
@@ -298,7 +325,7 @@ export default function DishMediaHotspots({
 
               <button className="btn" disabled={saving} onClick={save}>{saving ? "Saving…" : "Save"}</button>
               <span className="small" style={{ opacity:.8 }}>Drag points. Click image to add points. Double-click to zoom.</span>
-            </>
+            </div>
           )}
         </div>
       )}
@@ -306,29 +333,30 @@ export default function DishMediaHotspots({
       {isAdmin && edit && (
         <div style={{ marginTop: 10 }}>
           <div className="small" style={{ opacity:.85, marginBottom: 6 }}>Hotspots</div>
+
           {(hotspots||[]).map((h, idx) => (
             <div key={idx} className="panel" style={{ padding:10, marginBottom:8 }}>
-              <div className="row">
-                <div className="field" style={{ minWidth: 200, flex:1 }}>
+              <div className="row" style={{ display:"flex", gap:10, flexWrap:"wrap", alignItems:"flex-end" }}>
+                <div className="field" style={{ minWidth: 240, flex:1 }}>
                   <label>ingredientId</label>
                   <input
                     value={h.ingredientId}
                     onChange={(e)=>{
                       const next = [...hotspots];
                       next[idx] = { ...h, ingredientId: e.target.value };
-                      setDraft({ ...(draft||media), hotspots: next });
+                      setDraft({ ...(draft||media||{}), hotspots: next });
                     }}
                   />
                 </div>
 
-                <div className="field" style={{ minWidth: 120 }}>
+                <div className="field" style={{ minWidth: 160 }}>
                   <label>role</label>
                   <select
                     value={h.role || "component"}
                     onChange={(e)=>{
                       const next = [...hotspots];
                       next[idx] = { ...h, role: e.target.value };
-                      setDraft({ ...(draft||media), hotspots: next });
+                      setDraft({ ...(draft||media||{}), hotspots: next });
                     }}
                   >
                     {["hero","sauce","garnish","crunch","accent","component"].map(r => <option key={r} value={r}>{r}</option>)}
@@ -338,26 +366,27 @@ export default function DishMediaHotspots({
                 <button className="btn danger" onClick={()=>removeAt(idx)}>Remove</button>
               </div>
 
-              <div className="row" style={{ marginTop: 10 }}>
-                <div className="field" style={{ flex:1 }}>
+              <div className="row" style={{ display:"flex", gap:10, flexWrap:"wrap", marginTop:10 }}>
+                <div className="field" style={{ flex:1, minWidth: 220 }}>
                   <label>label (EN)</label>
                   <input
                     value={(h.label?.en || titleize(h.ingredientId))}
                     onChange={(e)=>{
                       const next = [...hotspots];
                       next[idx] = { ...h, label: { ...(h.label||{}), en: e.target.value } };
-                      setDraft({ ...(draft||media), hotspots: next });
+                      setDraft({ ...(draft||media||{}), hotspots: next });
                     }}
                   />
                 </div>
-                <div className="field" style={{ flex:1 }}>
+
+                <div className="field" style={{ flex:1, minWidth: 220 }}>
                   <label>label (DE)</label>
                   <input
                     value={(h.label?.de || titleize(h.ingredientId))}
                     onChange={(e)=>{
                       const next = [...hotspots];
                       next[idx] = { ...h, label: { ...(h.label||{}), de: e.target.value } };
-                      setDraft({ ...(draft||media), hotspots: next });
+                      setDraft({ ...(draft||media||{}), hotspots: next });
                     }}
                   />
                 </div>
