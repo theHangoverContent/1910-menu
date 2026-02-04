@@ -14,13 +14,13 @@ This installs dependencies for the root, server, and client workspaces.
 
 ### 2. Configure Environment
 
-Copy `.env.example` to `.env` and update tokens:
+Copy `.env.example` to `.env`:
 
 ```bash
 cp .env.example .env
 ```
 
-Edit `.env`:
+Edit `.env` if you want custom tokens (optional - defaults work fine):
 ```bash
 PORT=8787
 ADMIN_TOKEN=your-secret-admin-token
@@ -28,7 +28,36 @@ EDITOR_TOKEN=your-secret-editor-token
 DEFAULT_STAGE=published
 ```
 
-### 3. Run Development Server
+### 3. Add Dish Photos (Manual Step)
+
+The folder structure is ready, but you need to add your dish images:
+
+**Location:** `server/public/media/dishes/tasting/`
+
+**Required images (WebP format recommended):**
+- `snack-eggshell.webp`
+- `snack-mushroom-tartlet.webp`
+- `amuse-bouche.webp`
+- `bread-course.webp`
+- `starter-1.webp`
+- `starter-2.webp`
+- `egg-royale.webp`
+- `between.webp`
+- `surprise.webp`
+- `main-course.webp`
+- `pre-dessert.webp`
+- `dessert.webp`
+- `friandises.webp`
+
+**Convert images to WebP:**
+```bash
+# If you have JPG/PNG images, use the provided Python tool
+python tools/convert_tasting_backups_to_webp.py
+```
+
+**Note:** The app will work without images (shows placeholder), but images make hotspots interactive.
+
+### 4. Run Development Server
 
 ```bash
 npm run dev
@@ -40,12 +69,22 @@ This starts:
 
 The client proxies `/api` and `/media` requests to the server.
 
-### 4. Access Application
+### 5. Access Application
 
 - **Public Menu**: http://localhost:5173
 - **Admin Mode**: http://localhost:5173?admin=1
 - **German Language**: http://localhost:5173?lang=de
 - **Stage Selector**: http://localhost:5173?stage=draft
+
+### 6. Test Admin Features (Optional)
+
+1. Open http://localhost:5173?admin=1
+2. Enter your ADMIN_TOKEN (from .env) in the "Admin token" field
+3. Click on any dish → "Edit Hotspots"
+4. Click "Auto-generate (backend)" to create hotspots
+5. Adjust strategy (auto, goldenTriangle, etc.) and seed as needed
+6. Click "Save" to persist
+7. Refresh page - hotspots remain!
 
 ## API Endpoints
 
