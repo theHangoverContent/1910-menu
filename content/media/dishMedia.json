@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-02-01",
+  "menus": {
+    "tasting": {
+      "stages": {
+        "published": {
+          "snack-eggshell": {
+            "imageUrl": "/media/dishes/tasting/snack-eggshell.webp",
+            "alt": { "en": "Snack Eggshell", "de": "Snack Eggshell" },
+            "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABIMD...",
+            "hotspots": [
+              {
+                "x": 0.6391,
+                "y": 0.6513,
+                "ingredientId": "sausage-cream",
+                "role": "sauce",
+                "label": { "en": "Sausage Cream", "de": "Sausage Cream" }
+              },
+              {
+                "x": 0.4932,
+                "y": 0.5414,
+                "ingredientId": "sun-dried-tomato",
+                "role": "component",
+                "label": { "en": "Sun Dried Tomato", "de": "Sun Dried Tomato" }
+              },
+              {
+                "x": 0.3786,
+                "y": 0.6042,
+                "ingredientId": "lacto-fennel",
+                "role": "component",
+                "label": { "en": "Lacto Fennel", "de": "Lacto Fennel" }
+              },
+              {
+                "x": 0.6214,
+                "y": 0.5122,
+                "ingredientId": "potato-foam",
+                "role": "sauce",
+                "label": { "en": "Potato Foam", "de": "Potato Foam" }
+              },
+              {
+                "x": 0.4551,
+                "y": 0.7048,
+                "ingredientId": "paprika-cream",
+                "role": "sauce",
+                "label": { "en": "Paprika Cream", "de": "Paprika Cream" }
+              }
+            ]
+          },
+
+          "snack-mushroom-tartlet": {
+            "imageUrl": "/media/dishes/tasting/snack-mushroom-tartlet.webp",
+            "alt": { "en": "Snack Mushroom Tartlet", "de": "Snack Mushroom Tartlet" },
+            "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABIMD...",
+            "hotspots": [
+              {
+                "x": 0.6022,
+                "y": 0.6211,
+                "ingredientId": "tartlet",
+                "role": "crunch",
+                "label": { "en": "Tartlet", "de": "Tartlet" }
+              },
+              {
+                "x": 0.4187,
+                "y": 0.5068,
+                "ingredientId": "caramelised-shallot",
+                "role": "accent",
+                "label": { "en": "Caramelised Shallot", "de": "Caramelised Shallot" }
+              },
+              {
+                "x": 0.5446,
+                "y": 0.4529,
+                "ingredientId": "pickled-woodland-mushroom",
+                "role": "accent",
+                "label": { "en": "Pickled Woodland Mushroom", "de": "Pickled Woodland Mushroom" }
+              },
+              {
+                "x": 0.6761,
+                "y": 0.7214,
+                "ingredientId": "cep-cream",
+                "role": "sauce",
+                "label": { "en": "Cep Cream", "de": "Cep Cream" }
+              }
+            ]
+          },
+
+          "...": {
+            "imageUrl": "/media/dishes/tasting/ALL_OTHER_DISHES.webp",
+            "alt": { "en": "NOTE", "de": "HINWEIS" },
+            "blurDataURL": "",
+            "hotspots": [],
+            "note": "This JSON continues for all tasting dishes: amuse-bouche, bread-course, starter-1, starter-2, egg-royale, between, surprise, main-course, pre-dessert, dessert, friandises — each has blurDataURL + hotspots."
+          }
+        }
+      }
+    }
+  }
+}
