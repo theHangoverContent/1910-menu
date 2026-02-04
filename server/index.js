@@ -140,5 +140,13 @@ app.post("/api/media/autogen", (req,res)=>{
   res.json({ ok:true, menu, stage, dishId, strategy: strategy || "auto", seed: seed ?? 1910, hotspotsCount: hotspots.length, saved });
 });
 
+// Serve React build in production
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "..", "client", "dist")));
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "..", "client", "dist", "index.html"));
+  });
+}
+
 const port = parseInt(process.env.PORT || "8787", 10);
 app.listen(port, ()=>console.log(`Server listening on http://localhost:${port}`));
