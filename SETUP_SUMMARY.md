@@ -207,9 +207,12 @@ npm start
 
 ## What You Need to Do Manually
 
-### 1. Add Dish Photos
+### 1. Add Dish Photos ⚠️ REQUIRED
 
-**Required folder:** `server/public/media/dishes/tasting/`
+**📥 Download images from Google Drive:**
+https://drive.google.com/drive/folders/1Pie59v2eGH8vBbk-bCyDFO55_nH5mnXJ?usp=sharing
+
+**📂 Required folder:** `server/public/media/dishes/tasting/`
 
 **Image filenames (match dish IDs from tasting.json):**
 ```
@@ -230,13 +233,13 @@ friandises.webp
 
 **Format:** WebP recommended for best performance
 
-**Convert existing images:**
+**Convert existing images (if needed):**
 ```bash
 # Place JPG/PNG files in server/public/media/dishes/tasting/
 python tools/convert_tasting_backups_to_webp.py
 ```
 
-**Note:** App works without images (shows placeholder), but hotspots need images to be useful.
+**Note:** App works without images (shows placeholder), but images are REQUIRED for interactive hotspots to display properly.
 
 ### 2. Customize Tokens (Optional)
 

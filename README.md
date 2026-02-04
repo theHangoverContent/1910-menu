@@ -28,11 +28,14 @@ EDITOR_TOKEN=your-secret-editor-token
 DEFAULT_STAGE=published
 ```
 
-### 3. Add Dish Photos (Manual Step)
+### 3. Add Dish Photos (⚠️ REQUIRED MANUAL STEP)
 
 The folder structure is ready, but you need to add your dish images:
 
-**Location:** `server/public/media/dishes/tasting/`
+**📥 Download images from Google Drive:**
+https://drive.google.com/drive/folders/1Pie59v2eGH8vBbk-bCyDFO55_nH5mnXJ?usp=sharing
+
+**📂 Location:** `server/public/media/dishes/tasting/`
 
 **Required images (WebP format recommended):**
 - `snack-eggshell.webp`
@@ -49,13 +52,13 @@ The folder structure is ready, but you need to add your dish images:
 - `dessert.webp`
 - `friandises.webp`
 
-**Convert images to WebP:**
+**Convert images to WebP (if needed):**
 ```bash
 # If you have JPG/PNG images, use the provided Python tool
 python tools/convert_tasting_backups_to_webp.py
 ```
 
-**Note:** The app will work without images (shows placeholder), but images make hotspots interactive.
+**Note:** The app will work without images (shows placeholder text), but images are required for interactive hotspots to display properly.
 
 ### 4. Run Development Server
 
