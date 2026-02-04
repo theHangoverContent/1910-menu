@@ -11,6 +11,9 @@ server/dist/
 .env.*
 !.env.example
 
+# Runtime data (auto-seeded from content/)
+server/data/dishMedia.json
+
 .DS_Store
 Thumbs.db
 .vscode/
