@@ -136,8 +136,6 @@ export default function DishMediaHotspots({
     setDrag(null);
   }
 
-  const [lightbox, setLightbox] = useState(false);
-
   if (!hasImage) {
     return (
       <div style={{
