@@ -5,6 +5,7 @@ yarn-error.log*
 pnpm-debug.log*
 
 client/dist/
+client/test-deploy/
 server/dist/
 
 .env

@@ -3,6 +3,30 @@ import DishMediaHotspots from "./components/DishMediaHotspots.jsx";
 
 const STAGES = ["draft","review","published"];
 
+// Detect if we're running in static mode (GitHub Pages or built with GITHUB_PAGES env var)
+// Check if BASE_URL contains the repo path, which indicates it was built for GitHub Pages
+const isStaticMode = import.meta.env.BASE_URL !== '/' || window.location.hostname.includes('github.io');
+
+// Helper to fetch data with automatic fallback to static files
+async function fetchData(apiPath, staticPath) {
+  try {
+    // Try API first (works in development/production with backend)
+    const response = await fetch(apiPath);
+    if (response.ok) {
+      return response.json();
+    }
+    // If API fails (404 or error), fall back to static files
+    throw new Error('API not available');
+  } catch (error) {
+    // Fallback to static JSON files for GitHub Pages deployment
+    const response = await fetch(staticPath);
+    if (!response.ok) {
+      throw new Error(`Failed to load ${staticPath}`);
+    }
+    return response.json();
+  }
+}
+
 function useQuery(){
   return useMemo(()=>new URLSearchParams(window.location.search), []);
 }
@@ -23,15 +47,58 @@ export default function App(){
   const [catalog, setCatalog] = useState(null);
 
   useEffect(()=>{
-    fetch(`/api/menus/${menuName}?lang=${lang}`).then(r=>r.json()).then(setMenu);
+    const basePath = import.meta.env.BASE_URL || '/';
+    fetchData(
+      `/api/menus/${menuName}?lang=${lang}`,
+      `${basePath}content/menus/${menuName}.json`
+    ).then(data => {
+      // Wrap static data in expected format if needed
+      if (!data.ok) {
+        setMenu({ ok: true, menu: data });
+      } else {
+        setMenu(data);
+      }
+    }).catch(err => {
+      console.error('Failed to load menu:', err);
+      setMenu({ ok: false, error: err.message });
+    });
   },[menuName, lang]);
 
   useEffect(()=>{
-    fetch(`/api/media/${menuName}?stage=${stage}`).then(r=>r.json()).then(setMedia);
+    const basePath = import.meta.env.BASE_URL || '/';
+    fetchData(
+      `/api/media/${menuName}?stage=${stage}`,
+      `${basePath}content/media/dishMedia.json`
+    ).then(data => {
+      // Handle static data structure: { menus: { tasting: { stages: { published: {...} } } } }
+      if (!data.ok) {
+        const menuMedia = data.menus?.[menuName]?.stages?.[stage] || {};
+        setMedia({ ok: true, media: menuMedia });
+      } else {
+        setMedia(data);
+      }
+    }).catch(err => {
+      console.error('Failed to load media:', err);
+      setMedia({ ok: true, media: {} });
+    });
   },[menuName, stage]);
 
   useEffect(()=>{
-    fetch(`/api/ingredients/catalog`).then(r=>r.json()).then(setCatalog);
+    const basePath = import.meta.env.BASE_URL || '/';
+    fetchData(
+      `/api/ingredients/catalog`,
+      `${basePath}content/ingredients/ingredientsCatalog.json`
+    ).then(data => {
+      // Handle static data structure: { items: {...} }
+      if (!data.ok) {
+        setCatalog({ ok: true, items: data.items || data });
+      } else {
+        setCatalog(data);
+      }
+    }).catch(err => {
+      console.error('Failed to load catalog:', err);
+      setCatalog({ ok: true, items: {} });
+    });
   },[]);
 
   const brandBadges = [
@@ -47,6 +114,11 @@ export default function App(){
   }
 
   async function saveDishMedia(draft, dishId){
+    if (isStaticMode) {
+      alert("Admin features are not available in static mode. Please run the app with the backend server.");
+      return;
+    }
+    
     const payload = {
       menu: menuName,
       stage,
