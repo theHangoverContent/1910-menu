@@ -38,7 +38,24 @@ DEFAULT_STAGE=published
 
 ### 3. Add Dish Photos (⚠️ REQUIRED MANUAL STEP)
 
-The folder structure is ready, but you need to add your dish images:
+The folder structure is ready, but you need to add your dish images.
+
+**Option A: Load from Google Drive (Recommended)**
+
+Configure the app to load images directly from Google Drive without downloading:
+
+1. See [GOOGLE_DRIVE_IMAGES.md](GOOGLE_DRIVE_IMAGES.md) for detailed instructions
+2. Google Drive folder: https://drive.google.com/drive/folders/1Pie59v2eGH8vBbk-bCyDFO55_nH5mnXJ?usp=sharing
+3. Quick setup:
+   ```bash
+   # 1. Edit tools/google-drive-config.json with file IDs from Google Drive
+   # 2. Run the update script
+   npm run update-gdrive-images
+   ```
+
+**Option B: Use Local Images**
+
+Download and store images locally:
 
 **📥 Download images from Google Drive:**
 https://drive.google.com/drive/folders/1Pie59v2eGH8vBbk-bCyDFO55_nH5mnXJ?usp=sharing
