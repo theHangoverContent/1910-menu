@@ -251,7 +251,7 @@ The repository is configured to automatically deploy to GitHub Pages when change
 git push origin main
 ```
 
-The site will be available at: `https://thehangover.content.github.io/1910-menu/`
+The site will be available at: `https://thehangoverContent.github.io/1910-menu/`
 
 **Note:** The static GitHub Pages deployment serves only the React client. API endpoints and dynamic features require a backend server (see Local Production Build).
 
