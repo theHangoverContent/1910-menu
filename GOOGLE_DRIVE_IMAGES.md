@@ -39,6 +39,21 @@ Images for the tasting menu can be loaded directly from Google Drive, allowing e
 
 ### Step 2: Configure File IDs
 
+**Option A: Interactive Setup (Recommended)**
+
+Use the interactive helper script:
+
+```bash
+node tools/populate-gdrive-config.js
+```
+
+This script will:
+- Prompt you for each image's Google Drive link
+- Automatically extract file IDs
+- Update `tools/google-drive-config.json`
+
+**Option B: Manual Setup**
+
 Edit `tools/google-drive-config.json` and replace `PASTE_FILE_ID_HERE` with the actual file IDs:
 
 ```json
@@ -49,6 +64,18 @@ Edit `tools/google-drive-config.json` and replace `PASTE_FILE_ID_HERE` with the 
     ...
   }
 }
+```
+
+**Option C: Extract from Links**
+
+If you have links in a file or clipboard, use the extraction helper:
+
+```bash
+# Extract file IDs from links
+node tools/extract-gdrive-ids.js "link1" "link2" "link3"
+
+# Or interactively (paste links, Ctrl+D when done)
+node tools/extract-gdrive-ids.js
 ```
 
 ### Step 3: Update Image URLs
