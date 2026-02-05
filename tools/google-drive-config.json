@@ -8,7 +8,7 @@
     "5. Run 'npm run update-gdrive-images' to update dishMedia.json with Google Drive URLs"
   ],
   "googleDriveFolder": "https://drive.google.com/drive/folders/1Pie59v2eGH8vBbk-bCyDFO55_nH5mnXJ?usp=sharing",
-  "urlTemplate": "https://drive.google.com/uc?export=view&id={FILE_ID}",
+  "urlTemplate": "https://lh3.googleusercontent.com/d/{FILE_ID}",
   "images": {
     "snack-eggshell.webp": "1NBcNnN7_8cRTDcAvZYHTwSD7XqGDx-cd",
     "snack-mushroom-tartlet.webp": "1fgU6ct1N5Wm9B8WpvH3wyaZojR_2BSog",
