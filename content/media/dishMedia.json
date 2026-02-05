@@ -1,13 +1,16 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-02-01",
+  "generatedAt": "2026-02-05",
   "menus": {
     "tasting": {
       "stages": {
         "published": {
           "snack-eggshell": {
-            "imageUrl": "/media/dishes/tasting/snack-eggshell.webp",
-            "alt": { "en": "Snack Eggshell", "de": "Snack Eggshell" },
+            "imageUrl": "https://drive.google.com/uc?export=view&id=1NBcNnN7_8cRTDcAvZYHTwSD7XqGDx-cd",
+            "alt": {
+              "en": "Snack Eggshell",
+              "de": "Snack Eggshell"
+            },
             "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABIMD...",
             "hotspots": [
               {
@@ -15,42 +18,59 @@
                 "y": 0.6513,
                 "ingredientId": "sausage-cream",
                 "role": "sauce",
-                "label": { "en": "Sausage Cream", "de": "Sausage Cream" }
+                "label": {
+                  "en": "Sausage Cream",
+                  "de": "Sausage Cream"
+                }
               },
               {
                 "x": 0.4932,
                 "y": 0.5414,
                 "ingredientId": "sun-dried-tomato",
                 "role": "component",
-                "label": { "en": "Sun Dried Tomato", "de": "Sun Dried Tomato" }
+                "label": {
+                  "en": "Sun Dried Tomato",
+                  "de": "Sun Dried Tomato"
+                }
               },
               {
                 "x": 0.3786,
                 "y": 0.6042,
                 "ingredientId": "lacto-fennel",
                 "role": "component",
-                "label": { "en": "Lacto Fennel", "de": "Lacto Fennel" }
+                "label": {
+                  "en": "Lacto Fennel",
+                  "de": "Lacto Fennel"
+                }
               },
               {
                 "x": 0.6214,
                 "y": 0.5122,
                 "ingredientId": "potato-foam",
                 "role": "sauce",
-                "label": { "en": "Potato Foam", "de": "Potato Foam" }
+                "label": {
+                  "en": "Potato Foam",
+                  "de": "Potato Foam"
+                }
               },
               {
                 "x": 0.4551,
                 "y": 0.7048,
                 "ingredientId": "paprika-cream",
                 "role": "sauce",
-                "label": { "en": "Paprika Cream", "de": "Paprika Cream" }
+                "label": {
+                  "en": "Paprika Cream",
+                  "de": "Paprika Cream"
+                }
               }
             ]
           },
-
           "snack-mushroom-tartlet": {
-            "imageUrl": "/media/dishes/tasting/snack-mushroom-tartlet.webp",
-            "alt": { "en": "Snack Mushroom Tartlet", "de": "Snack Mushroom Tartlet" },
+            "imageUrl": "https://drive.google.com/uc?export=view&id=1fgU6ct1N5Wm9B8WpvH3wyaZojR_2BSog",
+            "alt": {
+              "en": "Snack Mushroom Tartlet",
+              "de": "Snack Mushroom Tartlet"
+            },
             "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABIMD...",
             "hotspots": [
               {
@@ -58,38 +78,141 @@
                 "y": 0.6211,
                 "ingredientId": "tartlet",
                 "role": "crunch",
-                "label": { "en": "Tartlet", "de": "Tartlet" }
+                "label": {
+                  "en": "Tartlet",
+                  "de": "Tartlet"
+                }
               },
               {
                 "x": 0.4187,
                 "y": 0.5068,
                 "ingredientId": "caramelised-shallot",
                 "role": "accent",
-                "label": { "en": "Caramelised Shallot", "de": "Caramelised Shallot" }
+                "label": {
+                  "en": "Caramelised Shallot",
+                  "de": "Caramelised Shallot"
+                }
               },
               {
                 "x": 0.5446,
                 "y": 0.4529,
                 "ingredientId": "pickled-woodland-mushroom",
                 "role": "accent",
-                "label": { "en": "Pickled Woodland Mushroom", "de": "Pickled Woodland Mushroom" }
+                "label": {
+                  "en": "Pickled Woodland Mushroom",
+                  "de": "Pickled Woodland Mushroom"
+                }
               },
               {
                 "x": 0.6761,
                 "y": 0.7214,
                 "ingredientId": "cep-cream",
                 "role": "sauce",
-                "label": { "en": "Cep Cream", "de": "Cep Cream" }
+                "label": {
+                  "en": "Cep Cream",
+                  "de": "Cep Cream"
+                }
               }
             ]
           },
-
-          "...": {
-            "imageUrl": "/media/dishes/tasting/ALL_OTHER_DISHES.webp",
-            "alt": { "en": "NOTE", "de": "HINWEIS" },
-            "blurDataURL": "",
-            "hotspots": [],
-            "note": "This JSON continues for all tasting dishes: amuse-bouche, bread-course, starter-1, starter-2, egg-royale, between, surprise, main-course, pre-dessert, dessert, friandises — each has blurDataURL + hotspots."
+          "amuse-bouche": {
+            "imageUrl": "https://drive.google.com/uc?export=view&id=17EFsQdlUgYk7OpesHFdpZvlPN3vzWgsR",
+            "alt": {
+              "en": "Amuse Bouche",
+              "de": "Amuse Bouche"
+            },
+            "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABIMD...",
+            "hotspots": []
+          },
+          "bread-course": {
+            "imageUrl": "https://drive.google.com/uc?export=view&id=1KhQiXqErezyEp5dYPktewBZIdX1IguM-",
+            "alt": {
+              "en": "Bread Course",
+              "de": "Bread Course"
+            },
+            "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABIMD...",
+            "hotspots": []
+          },
+          "starter-1": {
+            "imageUrl": "https://drive.google.com/uc?export=view&id=19mjAp5SoOcaLMqFk8oQe-aifDYcQbr5m",
+            "alt": {
+              "en": "Starter 1",
+              "de": "Starter 1"
+            },
+            "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABIMD...",
+            "hotspots": []
+          },
+          "starter-2": {
+            "imageUrl": "https://drive.google.com/uc?export=view&id=1RkgERrWurE_LLGQPay1TIJLaW6eOKSZm",
+            "alt": {
+              "en": "Starter 2",
+              "de": "Starter 2"
+            },
+            "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABIMD...",
+            "hotspots": []
+          },
+          "egg-royale": {
+            "imageUrl": "https://drive.google.com/uc?export=view&id=1zUSXA2yv4KvQbe9wyh6iigBTzzdXHHTm",
+            "alt": {
+              "en": "Egg Royale",
+              "de": "Egg Royale"
+            },
+            "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABIMD...",
+            "hotspots": []
+          },
+          "between": {
+            "imageUrl": "https://drive.google.com/uc?export=view&id=1rNa856OBkIY59J72CE8UgT75bQ9njQP5",
+            "alt": {
+              "en": "Between",
+              "de": "Between"
+            },
+            "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABIMD...",
+            "hotspots": []
+          },
+          "surprise": {
+            "imageUrl": "https://drive.google.com/uc?export=view&id=1btcd-oL8Izm6kdKNaeE8_wxJwGybeOhZ",
+            "alt": {
+              "en": "Surprise",
+              "de": "Surprise"
+            },
+            "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABIMD...",
+            "hotspots": []
+          },
+          "main-course": {
+            "imageUrl": "https://drive.google.com/uc?export=view&id=1UeqCm2hwoZXkXuFV_Ia03DdtX4SUjxsO",
+            "alt": {
+              "en": "Main Course",
+              "de": "Main Course"
+            },
+            "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABIMD...",
+            "hotspots": []
+          },
+          "pre-dessert": {
+            "imageUrl": "https://drive.google.com/uc?export=view&id=1Tsm_qZcN4ANTzSvZXqc6_KcmoUBQUjLo",
+            "alt": {
+              "en": "Pre Dessert",
+              "de": "Pre Dessert"
+            },
+            "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABIMD...",
+            "hotspots": []
+          },
+          "dessert": {
+            "imageUrl": "https://drive.google.com/uc?export=view&id=1kQb_xZPtmnb4E6e6eW_KCBlbfP-t5FIz",
+            "alt": {
+              "en": "Dessert",
+              "de": "Dessert"
+            },
+            "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABIMD...",
+            "hotspots": []
+          },
+          "friandises": {
+            "imageUrl": "https://drive.google.com/uc?export=view&id=1JzR6gtcnNH6IlS1T6rCvj6PQfs8v9_AO",
+            "alt": {
+              "en": "Friandises",
+              "de": "Friandises"
+            },
+            "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABIMD...",
+            "hotspots": []
           }
         }
       }
