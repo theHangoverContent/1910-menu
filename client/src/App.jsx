@@ -53,61 +53,7 @@ export default function App(){
       `${basePath}content/menus/${menuName}.json`
     ).then(data => {
       // Wrap static data in expected format if needed
-      if (isStaticMode && !data.ok) {
-        setMenu({ ok: true, menu: data });
-      } else {
-        setMenu(data);
-      }
-    }).catch(err => {
-      console.error('Failed to load menu:', err);
-      setMenu({ ok: false, error: err.message });
-    });
-  },[menuName, lang]);
-
-  useEffect(()=>{
-    const basePath = import.meta.env.BASE_URL || '/';
-    fetchData(
-      `/api/media/${menuName}?stage=${stage}`,
-      `${basePath}content/media/dishMedia.json`
-    ).then(data => {
-      // Wrap static data in expected format if needed
-      if (isStaticMode && !data.ok) {
-        setMedia({ ok: true, media: data[menuName] || {} });
-      } else {
-        setMedia(data);
-      }
-    }).catch(err => {
-      console.error('Failed to load media:', err);
-      setMedia({ ok: true, media: {} });
-    });
-  },[menuName, stage]);
-
-  useEffect(()=>{
-    const basePath = import.meta.env.BASE_URL || '/';
-    fetchData(
-      `/api/ingredients/catalog`,
-      `${basePath}content/ingredients/ingredientsCatalog.json`
-    ).then(data => {
-      // Wrap static data in expected format if needed
-      if (isStaticMode && !data.ok) {
-        setCatalog({ ok: true, items: data });
-      } else {
-        setCatalog(data);
-      }
-    }).catch(err => {
-      console.error('Failed to load catalog:', err);
-      setCatalog({ ok: true, items: {} });
-    });
-  },[]);
-
-  useEffect(()=>{
-    const basePath = import.meta.env.BASE_URL || '/';
-    fetchData(
-      `/api/menus/${menuName}?lang=${lang}`,
-      `${basePath}content/menus/${menuName}.json`
-    ).then(data => {
-      // Wrap static data in expected format if needed
-      if (isStaticMode && !data.ok) {
+      if (!data.ok) {
         setMenu({ ok: true, menu: data });
       } else {
         setMenu(data);
@@ -125,7 +71,7 @@ export default function App(){
       `${basePath}content/media/dishMedia.json`
     ).then(data => {
       // Handle static data structure: { menus: { tasting: { stages: { published: {...} } } } }
-      if (isStaticMode && !data.ok) {
+      if (!data.ok) {
         const menuMedia = data.menus?.[menuName]?.stages?.[stage] || {};
         setMedia({ ok: true, media: menuMedia });
       } else {
@@ -144,7 +90,7 @@ export default function App(){
       `${basePath}content/ingredients/ingredientsCatalog.json`
     ).then(data => {
       // Handle static data structure: { items: {...} }
-      if (isStaticMode && !data.ok) {
+      if (!data.ok) {
         setCatalog({ ok: true, items: data.items || data });
       } else {
         setCatalog(data);
