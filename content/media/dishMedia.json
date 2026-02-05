@@ -122,7 +122,98 @@
               "de": "Amuse Bouche"
             },
             "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABIMD...",
-            "hotspots": []
+            "hotspots": [
+              {
+                "x": 0.5012,
+                "y": 0.5234,
+                "ingredientId": "oona-caviar",
+                "role": "hero",
+                "label": {
+                  "en": "Oona Caviar",
+                  "de": "Oona Kaviar"
+                }
+              },
+              {
+                "x": 0.6123,
+                "y": 0.5789,
+                "ingredientId": "dry-aged-zander",
+                "role": "hero",
+                "label": {
+                  "en": "Dry-aged Zander",
+                  "de": "Trocken Gereifter Zander"
+                }
+              },
+              {
+                "x": 0.4456,
+                "y": 0.6211,
+                "ingredientId": "black-radish",
+                "role": "accent",
+                "label": {
+                  "en": "Black Radish Brunoise",
+                  "de": "Schwarzer Rettich Brunoise"
+                }
+              },
+              {
+                "x": 0.5678,
+                "y": 0.6834,
+                "ingredientId": "smoked-fish-dashi",
+                "role": "sauce",
+                "label": {
+                  "en": "Smoked-fish Dashi",
+                  "de": "Dashi aus Geräuchertem Fisch"
+                }
+              },
+              {
+                "x": 0.3821,
+                "y": 0.5556,
+                "ingredientId": "fish-garum",
+                "role": "sauce",
+                "label": {
+                  "en": "House Fish Garum",
+                  "de": "Hausgemachtes Fischgarum"
+                }
+              },
+              {
+                "x": 0.6534,
+                "y": 0.4912,
+                "ingredientId": "lime-juice",
+                "role": "accent",
+                "label": {
+                  "en": "Lime Juice",
+                  "de": "Limettensaft"
+                }
+              },
+              {
+                "x": 0.4234,
+                "y": 0.4678,
+                "ingredientId": "celeriac",
+                "role": "hero",
+                "label": {
+                  "en": "Celeriac (V)",
+                  "de": "Knollensellerie (V)"
+                }
+              },
+              {
+                "x": 0.5445,
+                "y": 0.4234,
+                "ingredientId": "vegi-caviar",
+                "role": "hero",
+                "label": {
+                  "en": "Vegetable Caviar (V)",
+                  "de": "Vegi-Kaviar (V)"
+                }
+              },
+              {
+                "x": 0.6789,
+                "y": 0.6445,
+                "ingredientId": "mountain-dashi",
+                "role": "sauce",
+                "label": {
+                  "en": "Mountain Dashi (V)",
+                  "de": "Mountain Dashi (V)"
+                }
+              }
+            ]
           },
           "bread-course": {
             "imageUrl": "https://lh3.googleusercontent.com/d/1KhQiXqErezyEp5dYPktewBZIdX1IguM-",
@@ -131,7 +222,48 @@
               "de": "Bread Course"
             },
             "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABIMD...",
-            "hotspots": []
+            "hotspots": [
+              {
+                "x": 0.4523,
+                "y": 0.5423,
+                "ingredientId": "sourdough-bread",
+                "role": "hero",
+                "label": {
+                  "en": "Sourdough Bread",
+                  "de": "Sauerteigbrot"
+                }
+              },
+              {
+                "x": 0.5812,
+                "y": 0.5789,
+                "ingredientId": "potato-bread",
+                "role": "hero",
+                "label": {
+                  "en": "Potato Bread",
+                  "de": "Kartoffelbrot"
+                }
+              },
+              {
+                "x": 0.4789,
+                "y": 0.6534,
+                "ingredientId": "butter",
+                "role": "sauce",
+                "label": {
+                  "en": "Grindelwald Butter",
+                  "de": "Grindelwald-Butter"
+                }
+              },
+              {
+                "x": 0.5934,
+                "y": 0.4812,
+                "ingredientId": "roasted-yeast",
+                "role": "accent",
+                "label": {
+                  "en": "Roasted Yeast",
+                  "de": "Geröstete Hefe"
+                }
+              }
+            ]
           },
           "starter-1": {
             "imageUrl": "https://lh3.googleusercontent.com/d/19mjAp5SoOcaLMqFk8oQe-aifDYcQbr5m",
@@ -140,7 +272,98 @@
               "de": "Starter 1"
             },
             "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABIMD...",
-            "hotspots": []
+            "hotspots": [
+              {
+                "x": 0.5123,
+                "y": 0.5112,
+                "ingredientId": "beetroot-red-yellow",
+                "role": "hero",
+                "label": {
+                  "en": "Organic Red & Yellow Beetroot",
+                  "de": "Bio Rote & Gelbe Rande"
+                }
+              },
+              {
+                "x": 0.4234,
+                "y": 0.5934,
+                "ingredientId": "beetroot-jelly",
+                "role": "sauce",
+                "label": {
+                  "en": "Red Beet Jelly/Gel",
+                  "de": "Rote-Bete-Gel"
+                }
+              },
+              {
+                "x": 0.6012,
+                "y": 0.6234,
+                "ingredientId": "pumpkin-seed-cream",
+                "role": "sauce",
+                "label": {
+                  "en": "Roasted Pumpkin Seed Cream",
+                  "de": "Kürbiskerncreme"
+                }
+              },
+              {
+                "x": 0.5645,
+                "y": 0.4523,
+                "ingredientId": "pumpkin-seed-oil",
+                "role": "sauce",
+                "label": {
+                  "en": "Pumpkin Seed Oil",
+                  "de": "Kürbiskernöl"
+                }
+              },
+              {
+                "x": 0.3912,
+                "y": 0.5234,
+                "ingredientId": "autumn-trumpet-mushroom",
+                "role": "accent",
+                "label": {
+                  "en": "Pickled Autumn Trumpet Mushrooms",
+                  "de": "Eingelegte Herbsttrompeten"
+                }
+              },
+              {
+                "x": 0.6534,
+                "y": 0.5456,
+                "ingredientId": "cream-cheese-sauce",
+                "role": "sauce",
+                "label": {
+                  "en": "Local Cream Cheese Sauce",
+                  "de": "Lokale Frischkäse-Sauce"
+                }
+              },
+              {
+                "x": 0.4856,
+                "y": 0.6789,
+                "ingredientId": "lacto-salsify",
+                "role": "accent",
+                "label": {
+                  "en": "Lacto-fermented Salsify",
+                  "de": "Lacto-fermentierte Schwarzwurzel"
+                }
+              },
+              {
+                "x": 0.5789,
+                "y": 0.3934,
+                "ingredientId": "mustard-seeds",
+                "role": "garnish",
+                "label": {
+                  "en": "Mustard Seeds",
+                  "de": "Senfsaat"
+                }
+              },
+              {
+                "x": 0.4234,
+                "y": 0.4312,
+                "ingredientId": "chives",
+                "role": "garnish",
+                "label": {
+                  "en": "Chives",
+                  "de": "Schnittlauch"
+                }
+              }
+            ]
           },
           "starter-2": {
             "imageUrl": "https://lh3.googleusercontent.com/d/1RkgERrWurE_LLGQPay1TIJLaW6eOKSZm",
@@ -149,7 +372,138 @@
               "de": "Starter 2"
             },
             "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABIMD...",
-            "hotspots": []
+            "hotspots": [
+              {
+                "x": 0.4912,
+                "y": 0.5423,
+                "ingredientId": "jerusalem-artichoke-cake",
+                "role": "hero",
+                "label": {
+                  "en": "Jerusalem Artichoke Cake",
+                  "de": "Topinamburkuchen"
+                }
+              },
+              {
+                "x": 0.5634,
+                "y": 0.4812,
+                "ingredientId": "egg-yolk",
+                "role": "component",
+                "label": {
+                  "en": "Egg Yolk",
+                  "de": "Eigelb"
+                }
+              },
+              {
+                "x": 0.4234,
+                "y": 0.6012,
+                "ingredientId": "butter-roasted-topinambur",
+                "role": "hero",
+                "label": {
+                  "en": "Butter-roasted Jerusalem Artichoke",
+                  "de": "Buttergerösteter Topinambur"
+                }
+              },
+              {
+                "x": 0.6123,
+                "y": 0.5989,
+                "ingredientId": "baked-yeast",
+                "role": "accent",
+                "label": {
+                  "en": "Baked Yeast",
+                  "de": "Gebackene Hefe"
+                }
+              },
+              {
+                "x": 0.5456,
+                "y": 0.6534,
+                "ingredientId": "koji-cream",
+                "role": "sauce",
+                "label": {
+                  "en": "House-made Koji Cream",
+                  "de": "Hausgemachte Koji-Creme"
+                }
+              },
+              {
+                "x": 0.3789,
+                "y": 0.5234,
+                "ingredientId": "creme-fraiche",
+                "role": "sauce",
+                "label": {
+                  "en": "Local Crème Fraîche",
+                  "de": "Lokale Crème fraîche"
+                }
+              },
+              {
+                "x": 0.6534,
+                "y": 0.5112,
+                "ingredientId": "sunflower-crumble",
+                "role": "crunch",
+                "label": {
+                  "en": "Sunflower Seed Crumble",
+                  "de": "Sonnenblumenkern-Crumble"
+                }
+              },
+              {
+                "x": 0.4523,
+                "y": 0.4456,
+                "ingredientId": "milk-powder",
+                "role": "component",
+                "label": {
+                  "en": "Milk Powder",
+                  "de": "Milchpulver"
+                }
+              },
+              {
+                "x": 0.5789,
+                "y": 0.4134,
+                "ingredientId": "shallot",
+                "role": "component",
+                "label": {
+                  "en": "Shallot",
+                  "de": "Schalotte"
+                }
+              },
+              {
+                "x": 0.3934,
+                "y": 0.4612,
+                "ingredientId": "pickled-onion",
+                "role": "accent",
+                "label": {
+                  "en": "Pickled Onions",
+                  "de": "Eingelegte Zwiebeln"
+                }
+              },
+              {
+                "x": 0.6312,
+                "y": 0.4323,
+                "ingredientId": "crispy-artichoke-leaf",
+                "role": "crunch",
+                "label": {
+                  "en": "Crispy Jerusalem Artichoke Leaf",
+                  "de": "Knuspriges Topinamburblatt"
+                }
+              },
+              {
+                "x": 0.4789,
+                "y": 0.7012,
+                "ingredientId": "onion-lemonade",
+                "role": "sauce",
+                "label": {
+                  "en": "Onion Lemonade Sauce",
+                  "de": "Zwiebel-Limonaden-Sauce"
+                }
+              },
+              {
+                "x": 0.6089,
+                "y": 0.6823,
+                "ingredientId": "fermented-gooseberry",
+                "role": "accent",
+                "label": {
+                  "en": "Fermented Gooseberry",
+                  "de": "Fermentierte Stachelbeere"
+                }
+              }
+            ]
           },
           "egg-royale": {
             "imageUrl": "https://lh3.googleusercontent.com/d/1zUSXA2yv4KvQbe9wyh6iigBTzzdXHHTm",
@@ -158,7 +512,138 @@
               "de": "Egg Royale"
             },
             "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABIMD...",
-            "hotspots": []
+            "hotspots": [
+              {
+                "x": 0.5012,
+                "y": 0.5312,
+                "ingredientId": "egg-royale-base",
+                "role": "hero",
+                "label": {
+                  "en": "Egg Royale",
+                  "de": "Egg Royale"
+                }
+              },
+              {
+                "x": 0.4234,
+                "y": 0.5823,
+                "ingredientId": "kimchi-juice",
+                "role": "sauce",
+                "label": {
+                  "en": "House Kimchi Juice",
+                  "de": "Hausgemachter Kimchi-Saft"
+                }
+              },
+              {
+                "x": 0.5789,
+                "y": 0.5934,
+                "ingredientId": "char-rubigen",
+                "role": "hero",
+                "label": {
+                  "en": "Char from Rubigen",
+                  "de": "Saibling aus Rubigen"
+                }
+              },
+              {
+                "x": 0.6312,
+                "y": 0.5212,
+                "ingredientId": "fish-mousse",
+                "role": "component",
+                "label": {
+                  "en": "Fish Mousse",
+                  "de": "Fischmousse"
+                }
+              },
+              {
+                "x": 0.3856,
+                "y": 0.5112,
+                "ingredientId": "pickled-rhubarb",
+                "role": "accent",
+                "label": {
+                  "en": "Pickled Rhubarb",
+                  "de": "Eingelegter Rhabarber"
+                }
+              },
+              {
+                "x": 0.4612,
+                "y": 0.4523,
+                "ingredientId": "purple-onion",
+                "role": "component",
+                "label": {
+                  "en": "Blanched Purple Onion",
+                  "de": "Blanchierte Rote Zwiebel"
+                }
+              },
+              {
+                "x": 0.5534,
+                "y": 0.4334,
+                "ingredientId": "salmon-caviar",
+                "role": "hero",
+                "label": {
+                  "en": "Salmon Caviar",
+                  "de": "Lachsrogen"
+                }
+              },
+              {
+                "x": 0.6534,
+                "y": 0.6312,
+                "ingredientId": "fermented-paprika",
+                "role": "accent",
+                "label": {
+                  "en": "Fermented Paprika",
+                  "de": "Fermentierter Paprika"
+                }
+              },
+              {
+                "x": 0.3534,
+                "y": 0.6123,
+                "ingredientId": "parsley-root",
+                "role": "component",
+                "label": {
+                  "en": "Pickled Parsley Root",
+                  "de": "Eingelegte Petersilienwurzel"
+                }
+              },
+              {
+                "x": 0.4934,
+                "y": 0.6812,
+                "ingredientId": "chives",
+                "role": "garnish",
+                "label": {
+                  "en": "Chives",
+                  "de": "Schnittlauch"
+                }
+              },
+              {
+                "x": 0.5923,
+                "y": 0.6712,
+                "ingredientId": "miso",
+                "role": "sauce",
+                "label": {
+                  "en": "Miso",
+                  "de": "Miso"
+                }
+              },
+              {
+                "x": 0.6234,
+                "y": 0.4512,
+                "ingredientId": "shiso-vinegar",
+                "role": "sauce",
+                "label": {
+                  "en": "Shiso Vinegar",
+                  "de": "Shiso-Essig"
+                }
+              },
+              {
+                "x": 0.4123,
+                "y": 0.4012,
+                "ingredientId": "espro-herbs",
+                "role": "garnish",
+                "label": {
+                  "en": "Espro Herbs",
+                  "de": "Espro Kräuter"
+                }
+              }
+            ]
           },
           "between": {
             "imageUrl": "https://lh3.googleusercontent.com/d/1rNa856OBkIY59J72CE8UgT75bQ9njQP5",
@@ -167,7 +652,98 @@
               "de": "Between"
             },
             "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABIMD...",
-            "hotspots": []
+            "hotspots": [
+              {
+                "x": 0.5123,
+                "y": 0.5212,
+                "ingredientId": "leek",
+                "role": "hero",
+                "label": {
+                  "en": "Leek",
+                  "de": "Lauch"
+                }
+              },
+              {
+                "x": 0.4334,
+                "y": 0.5734,
+                "ingredientId": "lemongrass",
+                "role": "accent",
+                "label": {
+                  "en": "Lemongrass",
+                  "de": "Zitronengras"
+                }
+              },
+              {
+                "x": 0.5912,
+                "y": 0.6012,
+                "ingredientId": "ginger",
+                "role": "accent",
+                "label": {
+                  "en": "Ginger",
+                  "de": "Ingwer"
+                }
+              },
+              {
+                "x": 0.6234,
+                "y": 0.5312,
+                "ingredientId": "lemon",
+                "role": "accent",
+                "label": {
+                  "en": "Lemon",
+                  "de": "Zitrone"
+                }
+              },
+              {
+                "x": 0.4612,
+                "y": 0.4823,
+                "ingredientId": "lacto-wild-garlic",
+                "role": "component",
+                "label": {
+                  "en": "Lacto-fermented Wild Garlic",
+                  "de": "Lacto-fermentierter Bärlauch"
+                }
+              },
+              {
+                "x": 0.5534,
+                "y": 0.4434,
+                "ingredientId": "wild-garlic-capers",
+                "role": "accent",
+                "label": {
+                  "en": "Wild Garlic Capers",
+                  "de": "Bärlauchkapern"
+                }
+              },
+              {
+                "x": 0.3823,
+                "y": 0.5234,
+                "ingredientId": "fermented-cabbage-sauce",
+                "role": "sauce",
+                "label": {
+                  "en": "Fermented Cabbage Sauce",
+                  "de": "Fermentierte Kohlsauce"
+                }
+              },
+              {
+                "x": 0.6523,
+                "y": 0.6234,
+                "ingredientId": "dried-cep",
+                "role": "component",
+                "label": {
+                  "en": "Dried Cep Mushrooms",
+                  "de": "Getrocknete Steinpilze"
+                }
+              },
+              {
+                "x": 0.4923,
+                "y": 0.6623,
+                "ingredientId": "lovage-oil",
+                "role": "sauce",
+                "label": {
+                  "en": "Lovage Oil",
+                  "de": "Liebstöckelöl"
+                }
+              }
+            ]
           },
           "surprise": {
             "imageUrl": "https://lh3.googleusercontent.com/d/1btcd-oL8Izm6kdKNaeE8_wxJwGybeOhZ",
@@ -176,7 +752,78 @@
               "de": "Surprise"
             },
             "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABIMD...",
-            "hotspots": []
+            "hotspots": [
+              {
+                "x": 0.5012,
+                "y": 0.5334,
+                "ingredientId": "agnolotti",
+                "role": "hero",
+                "label": {
+                  "en": "Agnolotti",
+                  "de": "Agnolotti"
+                }
+              },
+              {
+                "x": 0.4234,
+                "y": 0.5823,
+                "ingredientId": "walnut-pesto",
+                "role": "sauce",
+                "label": {
+                  "en": "Walnut Pesto",
+                  "de": "Walnuss-Pesto"
+                }
+              },
+              {
+                "x": 0.5834,
+                "y": 0.6112,
+                "ingredientId": "black-garlic-mayo",
+                "role": "sauce",
+                "label": {
+                  "en": "Black Garlic Mayonnaise",
+                  "de": "Schwarzer Knoblauch-Mayonnaise"
+                }
+              },
+              {
+                "x": 0.6312,
+                "y": 0.5312,
+                "ingredientId": "roasted-walnuts",
+                "role": "crunch",
+                "label": {
+                  "en": "Roasted Walnuts",
+                  "de": "Geröstete Walnüsse"
+                }
+              },
+              {
+                "x": 0.3912,
+                "y": 0.5234,
+                "ingredientId": "cheese-rind-sauce",
+                "role": "sauce",
+                "label": {
+                  "en": "Cheese Rind Sauce",
+                  "de": "Käserinden-Sauce"
+                }
+              },
+              {
+                "x": 0.5534,
+                "y": 0.4534,
+                "ingredientId": "black-pepper",
+                "role": "garnish",
+                "label": {
+                  "en": "Black Pepper",
+                  "de": "Schwarzer Pfeffer"
+                }
+              },
+              {
+                "x": 0.4612,
+                "y": 0.4723,
+                "ingredientId": "black-truffle",
+                "role": "hero",
+                "label": {
+                  "en": "Black Truffle",
+                  "de": "Schwarzer Trüffel"
+                }
+              }
+            ]
           },
           "main-course": {
             "imageUrl": "https://lh3.googleusercontent.com/d/1UeqCm2hwoZXkXuFV_Ia03DdtX4SUjxsO",
@@ -185,7 +832,98 @@
               "de": "Main Course"
             },
             "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABIMD...",
-            "hotspots": []
+            "hotspots": [
+              {
+                "x": 0.5234,
+                "y": 0.5212,
+                "ingredientId": "dry-aged-duck-breast",
+                "role": "hero",
+                "label": {
+                  "en": "Dry-aged Duck Breast",
+                  "de": "Dry-aged Entenbrust"
+                }
+              },
+              {
+                "x": 0.4123,
+                "y": 0.5734,
+                "ingredientId": "duck-leg-croquette",
+                "role": "crunch",
+                "label": {
+                  "en": "Duck Leg Croquette",
+                  "de": "Entenkeulen-Krokette"
+                }
+              },
+              {
+                "x": 0.6234,
+                "y": 0.5912,
+                "ingredientId": "duck-jus",
+                "role": "sauce",
+                "label": {
+                  "en": "Duck Jus",
+                  "de": "Entenjus"
+                }
+              },
+              {
+                "x": 0.5812,
+                "y": 0.4534,
+                "ingredientId": "elderberry",
+                "role": "accent",
+                "label": {
+                  "en": "Elderberry",
+                  "de": "Holunder"
+                }
+              },
+              {
+                "x": 0.3823,
+                "y": 0.5234,
+                "ingredientId": "braised-red-cabbage",
+                "role": "component",
+                "label": {
+                  "en": "Braised Red Cabbage",
+                  "de": "Geschmortes Rotkraut"
+                }
+              },
+              {
+                "x": 0.6612,
+                "y": 0.5312,
+                "ingredientId": "fermented-cabbage-powder",
+                "role": "component",
+                "label": {
+                  "en": "Fermented Cabbage Powder",
+                  "de": "Fermentiertes Kohlpulver"
+                }
+              },
+              {
+                "x": 0.4534,
+                "y": 0.4623,
+                "ingredientId": "cracker",
+                "role": "crunch",
+                "label": {
+                  "en": "Cracker",
+                  "de": "Cracker"
+                }
+              },
+              {
+                "x": 0.5534,
+                "y": 0.6312,
+                "ingredientId": "lingonberries",
+                "role": "accent",
+                "label": {
+                  "en": "Lingonberries",
+                  "de": "Preiselbeeren"
+                }
+              },
+              {
+                "x": 0.4812,
+                "y": 0.6523,
+                "ingredientId": "yeast-cream",
+                "role": "sauce",
+                "label": {
+                  "en": "Yeast Cream",
+                  "de": "Hefecreme"
+                }
+              }
+            ]
           },
           "pre-dessert": {
             "imageUrl": "https://lh3.googleusercontent.com/d/1Tsm_qZcN4ANTzSvZXqc6_KcmoUBQUjLo",
@@ -194,7 +932,58 @@
               "de": "Pre Dessert"
             },
             "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABIMD...",
-            "hotspots": []
+            "hotspots": [
+              {
+                "x": 0.5123,
+                "y": 0.5312,
+                "ingredientId": "pickled-strawberries",
+                "role": "hero",
+                "label": {
+                  "en": "Pickled Summer Strawberries",
+                  "de": "Eingelegte Sommererdbeeren"
+                }
+              },
+              {
+                "x": 0.4334,
+                "y": 0.5834,
+                "ingredientId": "pickled-pine",
+                "role": "accent",
+                "label": {
+                  "en": "Pickled Pine",
+                  "de": "Eingelegte Pinie"
+                }
+              },
+              {
+                "x": 0.5912,
+                "y": 0.6012,
+                "ingredientId": "kefir-ice-cream",
+                "role": "hero",
+                "label": {
+                  "en": "House Kefir Ice Cream",
+                  "de": "Hausgemachtes Kefir-Eis"
+                }
+              },
+              {
+                "x": 0.4612,
+                "y": 0.4723,
+                "ingredientId": "potato-skin-foam",
+                "role": "sauce",
+                "label": {
+                  "en": "Potato Skin Foam",
+                  "de": "Kartoffelschalen-Schaum"
+                }
+              },
+              {
+                "x": 0.5734,
+                "y": 0.4534,
+                "ingredientId": "dried-egg-yolk-meringue",
+                "role": "crunch",
+                "label": {
+                  "en": "Dried Egg Yolk Meringue",
+                  "de": "Getrocknete Eigelb-Meringue"
+                }
+              }
+            ]
           },
           "dessert": {
             "imageUrl": "https://lh3.googleusercontent.com/d/1kQb_xZPtmnb4E6e6eW_KCBlbfP-t5FIz",
@@ -203,7 +992,118 @@
               "de": "Dessert"
             },
             "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABIMD...",
-            "hotspots": []
+            "hotspots": [
+              {
+                "x": 0.5012,
+                "y": 0.5212,
+                "ingredientId": "lemongrass-cream",
+                "role": "sauce",
+                "label": {
+                  "en": "Lemongrass Cream",
+                  "de": "Zitronengras-Creme"
+                }
+              },
+              {
+                "x": 0.4234,
+                "y": 0.5734,
+                "ingredientId": "lime-zest",
+                "role": "garnish",
+                "label": {
+                  "en": "Lime Zest",
+                  "de": "Limettenzest"
+                }
+              },
+              {
+                "x": 0.5834,
+                "y": 0.5912,
+                "ingredientId": "almond-cocoa-cracker",
+                "role": "crunch",
+                "label": {
+                  "en": "Almond Cocoa Cracker",
+                  "de": "Mandel-Kakao-Cracker"
+                }
+              },
+              {
+                "x": 0.6234,
+                "y": 0.5234,
+                "ingredientId": "dark-chocolate-cremeux",
+                "role": "hero",
+                "label": {
+                  "en": "Dark Chocolate Crémeux",
+                  "de": "Schoko-Crémeux"
+                }
+              },
+              {
+                "x": 0.3912,
+                "y": 0.5334,
+                "ingredientId": "kvass-gel",
+                "role": "sauce",
+                "label": {
+                  "en": "Kvass Gel",
+                  "de": "Kvass-Gel"
+                }
+              },
+              {
+                "x": 0.4612,
+                "y": 0.4623,
+                "ingredientId": "spiez-verjus",
+                "role": "sauce",
+                "label": {
+                  "en": "Spiez Verjus",
+                  "de": "Spiez Verjus"
+                }
+              },
+              {
+                "x": 0.5534,
+                "y": 0.4434,
+                "ingredientId": "roasted-barley",
+                "role": "component",
+                "label": {
+                  "en": "Roasted Barley",
+                  "de": "Geröstete Gerste"
+                }
+              },
+              {
+                "x": 0.6412,
+                "y": 0.6212,
+                "ingredientId": "swiss-whisky-cream",
+                "role": "sauce",
+                "label": {
+                  "en": "Swiss Whisky Cream",
+                  "de": "Swiss Whisky Creme"
+                }
+              },
+              {
+                "x": 0.3823,
+                "y": 0.6123,
+                "ingredientId": "finger-lime",
+                "role": "garnish",
+                "label": {
+                  "en": "Finger Lime",
+                  "de": "Finger-Lime"
+                }
+              },
+              {
+                "x": 0.4934,
+                "y": 0.6523,
+                "ingredientId": "hay-ice-cream",
+                "role": "hero",
+                "label": {
+                  "en": "Hay Ice Cream",
+                  "de": "Heueis"
+                }
+              },
+              {
+                "x": 0.5823,
+                "y": 0.6734,
+                "ingredientId": "yogurt-snow",
+                "role": "component",
+                "label": {
+                  "en": "Yogurt & White Chocolate Snow",
+                  "de": "Joghurt- & Schokoladenschnee"
+                }
+              }
+            ]
           },
           "friandises": {
             "imageUrl": "https://lh3.googleusercontent.com/d/1JzR6gtcnNH6IlS1T6rCvj6PQfs8v9_AO",
@@ -212,7 +1112,88 @@
               "de": "Friandises"
             },
             "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABIMD...",
-            "hotspots": []
+            "hotspots": [
+              {
+                "x": 0.4823,
+                "y": 0.5234,
+                "ingredientId": "cinnamon-macaron",
+                "role": "hero",
+                "label": {
+                  "en": "Cinnamon Macaron",
+                  "de": "Zimt-Macaron"
+                }
+              },
+              {
+                "x": 0.5634,
+                "y": 0.5534,
+                "ingredientId": "black-garlic-chocolate",
+                "role": "hero",
+                "label": {
+                  "en": "Black Garlic Chocolate",
+                  "de": "Schwarzer Knoblauch-Schokolade"
+                }
+              },
+              {
+                "x": 0.4234,
+                "y": 0.5834,
+                "ingredientId": "ginger",
+                "role": "accent",
+                "label": {
+                  "en": "Ginger",
+                  "de": "Ingwer"
+                }
+              },
+              {
+                "x": 0.5912,
+                "y": 0.4734,
+                "ingredientId": "orange-gel",
+                "role": "sauce",
+                "label": {
+                  "en": "Orange Gel",
+                  "de": "Orangengel"
+                }
+              },
+              {
+                "x": 0.5212,
+                "y": 0.6112,
+                "ingredientId": "praline",
+                "role": "hero",
+                "label": {
+                  "en": "Praline",
+                  "de": "Praline"
+                }
+              },
+              {
+                "x": 0.4534,
+                "y": 0.4623,
+                "ingredientId": "fermented-plum",
+                "role": "component",
+                "label": {
+                  "en": "Fermented Plum",
+                  "de": "Fermentierte Pflaume"
+                }
+              },
+              {
+                "x": 0.6212,
+                "y": 0.6012,
+                "ingredientId": "cognac",
+                "role": "component",
+                "label": {
+                  "en": "Cognac",
+                  "de": "Cognac"
+                }
+              },
+              {
+                "x": 0.3912,
+                "y": 0.5334,
+                "ingredientId": "hazelnut",
+                "role": "component",
+                "label": {
+                  "en": "Hazelnut",
+                  "de": "Haselnuss"
+                }
+              }
+            ]
           }
         }
       }
