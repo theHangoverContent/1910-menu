@@ -91,6 +91,11 @@ app.get("/api/ingredients/catalog", (_req,res)=>{
   }
 });
 
+// NOTE: /api/media/layouts MUST come before /api/media/:menu to avoid being caught by the param route
+app.get("/api/media/layouts", (_req,res)=>{
+  res.json({ ok:true, layouts: STRATEGIES });
+});
+
 app.get("/api/media/:menu", (req,res)=>{
   const menuName = req.params.menu;
   const stage = (req.query.stage || process.env.DEFAULT_STAGE || "published").toLowerCase();
@@ -122,10 +127,6 @@ app.post("/api/media/upsert", apiWriteLimiter, (req,res)=>{
   const { menu, stage, dishId, imageUrl, alt, blurDataURL, hotspots } = p.data;
   const saved = db.upsertMedia({ menuName: menu, stage, dishId, imageUrl, alt, blurDataURL, hotspots });
   res.json({ ok:true, saved });
-});
-
-app.get("/api/media/layouts", (_req,res)=>{
-  res.json({ ok:true, layouts: STRATEGIES });
 });
 
 const AutoGenSchema = z.object({
