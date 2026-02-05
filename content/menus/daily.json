@@ -1,7 +1,0 @@
-{
-  "schemaVersion": 1,
-  "id": "daily",
-  "title": { "en": "Daily Menu", "de": "Tagesmenu" },
-  "days": ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"],
-  "menus": {}
-}
