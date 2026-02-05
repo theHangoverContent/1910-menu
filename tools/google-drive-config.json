@@ -10,18 +10,18 @@
   "googleDriveFolder": "https://drive.google.com/drive/folders/1Pie59v2eGH8vBbk-bCyDFO55_nH5mnXJ?usp=sharing",
   "urlTemplate": "https://drive.google.com/uc?export=view&id={FILE_ID}",
   "images": {
-    "snack-eggshell.webp": "PASTE_FILE_ID_HERE",
-    "snack-mushroom-tartlet.webp": "PASTE_FILE_ID_HERE",
-    "amuse-bouche.webp": "PASTE_FILE_ID_HERE",
-    "bread-course.webp": "PASTE_FILE_ID_HERE",
-    "starter-1.webp": "PASTE_FILE_ID_HERE",
-    "starter-2.webp": "PASTE_FILE_ID_HERE",
-    "egg-royale.webp": "PASTE_FILE_ID_HERE",
-    "between.webp": "PASTE_FILE_ID_HERE",
-    "surprise.webp": "PASTE_FILE_ID_HERE",
-    "main-course.webp": "PASTE_FILE_ID_HERE",
-    "pre-dessert.webp": "PASTE_FILE_ID_HERE",
-    "dessert.webp": "PASTE_FILE_ID_HERE",
-    "friandises.webp": "PASTE_FILE_ID_HERE"
+    "snack-eggshell.webp": "1NBcNnN7_8cRTDcAvZYHTwSD7XqGDx-cd",
+    "snack-mushroom-tartlet.webp": "1fgU6ct1N5Wm9B8WpvH3wyaZojR_2BSog",
+    "amuse-bouche.webp": "17EFsQdlUgYk7OpesHFdpZvlPN3vzWgsR",
+    "bread-course.webp": "1KhQiXqErezyEp5dYPktewBZIdX1IguM-",
+    "starter-1.webp": "19mjAp5SoOcaLMqFk8oQe-aifDYcQbr5m",
+    "starter-2.webp": "1RkgERrWurE_LLGQPay1TIJLaW6eOKSZm",
+    "egg-royale.webp": "1zUSXA2yv4KvQbe9wyh6iigBTzzdXHHTm",
+    "between.webp": "1rNa856OBkIY59J72CE8UgT75bQ9njQP5",
+    "surprise.webp": "1btcd-oL8Izm6kdKNaeE8_wxJwGybeOhZ",
+    "main-course.webp": "1UeqCm2hwoZXkXuFV_Ia03DdtX4SUjxsO",
+    "pre-dessert.webp": "1Tsm_qZcN4ANTzSvZXqc6_KcmoUBQUjLo",
+    "dessert.webp": "1kQb_xZPtmnb4E6e6eW_KCBlbfP-t5FIz",
+    "friandises.webp": "1JzR6gtcnNH6IlS1T6rCvj6PQfs8v9_AO"
   }
 }
