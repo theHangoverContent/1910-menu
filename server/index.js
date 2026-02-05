@@ -3,6 +3,7 @@ const cors = require("cors");
 const path = require("path");
 const fs = require("fs");
 const { z } = require("zod");
+const rateLimit = require("express-rate-limit");
 require("dotenv").config({ path: path.join(__dirname, "..", ".env") });
 
 const db = require("./db");
@@ -12,6 +13,34 @@ const { STRATEGIES, generateHotspots } = require("./hotspotLayouts");
 const app = express();
 app.use(cors());
 app.use(express.json({ limit: "2mb" }));
+
+// Rate limiting middleware
+const generalLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100, // Limit each IP to 100 requests per windowMs
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: { ok: false, error: "Too many requests, please try again later." }
+});
+
+const apiWriteLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 50, // Limit each IP to 50 write requests per windowMs
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: { ok: false, error: "Too many API write requests, please try again later." }
+});
+
+const staticFileLimiter = rateLimit({
+  windowMs: 1 * 60 * 1000, // 1 minute
+  max: 30, // Limit each IP to 30 static file requests per minute
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: "Too many requests, please try again later."
+});
+
+// Apply general rate limiting to all routes
+app.use(generalLimiter);
 
 app.use((req, _res, next) => {
   req.user = getUserFromReq(req);
@@ -85,7 +114,7 @@ const MediaUpsertSchema = z.object({
   })).optional()
 });
 
-app.post("/api/media/upsert", (req,res)=>{
+app.post("/api/media/upsert", apiWriteLimiter, (req,res)=>{
   if (!req.user || req.user.role !== "admin") return res.status(403).json({ ok:false, error:"Admin only" });
   const p = MediaUpsertSchema.safeParse(req.body);
   if (!p.success) return res.status(400).json({ ok:false, error:"Invalid payload", details: p.error.flatten() });
@@ -107,7 +136,7 @@ const AutoGenSchema = z.object({
   seed: z.number().int().optional()
 });
 
-app.post("/api/media/autogen", (req,res)=>{
+app.post("/api/media/autogen", apiWriteLimiter, (req,res)=>{
   if (!req.user || req.user.role !== "admin") return res.status(403).json({ ok:false, error:"Admin only" });
   const p = AutoGenSchema.safeParse(req.body);
   if (!p.success) return res.status(400).json({ ok:false, error:"Invalid payload", details: p.error.flatten() });
@@ -143,7 +172,7 @@ app.post("/api/media/autogen", (req,res)=>{
 // Serve React build in production
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "..", "client", "dist")));
-  app.get("*", (req, res) => {
+  app.get("*", staticFileLimiter, (req, res) => {
     res.sendFile(path.join(__dirname, "..", "client", "dist", "index.html"));
   });
 }
