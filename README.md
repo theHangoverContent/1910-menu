@@ -225,6 +225,8 @@ Switch stages via:
 
 ## Build and Deploy
 
+### Local Production Build
+
 ```bash
 # Build for production
 npm run build
@@ -232,6 +234,26 @@ npm run build
 # Start production server
 npm start
 ```
+
+### Deploy to GitHub Pages
+
+The repository is configured to automatically deploy to GitHub Pages when changes are pushed to the `main` branch.
+
+**Setup (one-time):**
+1. Go to repository Settings → Pages
+2. Set Source to "GitHub Actions"
+3. Push changes to `main` branch to trigger deployment
+
+**Manual deployment:**
+```bash
+# Trigger workflow manually from Actions tab
+# or push to main branch
+git push origin main
+```
+
+The site will be available at: `https://thehangoverContent.github.io/1910-menu/`
+
+**Note:** The static GitHub Pages deployment serves only the React client. API endpoints and dynamic features require a backend server (see Local Production Build).
 
 ## Adding Dish Images
 
