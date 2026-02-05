@@ -1,0 +1,27 @@
+{
+  "note": "Configuration file mapping dish images to Google Drive file IDs",
+  "instructions": [
+    "1. Open the Google Drive folder: https://drive.google.com/drive/folders/1Pie59v2eGH8vBbk-bCyDFO55_nH5mnXJ?usp=sharing",
+    "2. For each image file, right-click and select 'Get link' or 'Share'",
+    "3. Copy the file ID from the URL (format: https://drive.google.com/file/d/{FILE_ID}/view)",
+    "4. Paste each file ID in the corresponding field below",
+    "5. Run 'npm run update-gdrive-images' to update dishMedia.json with Google Drive URLs"
+  ],
+  "googleDriveFolder": "https://drive.google.com/drive/folders/1Pie59v2eGH8vBbk-bCyDFO55_nH5mnXJ?usp=sharing",
+  "urlTemplate": "https://drive.google.com/uc?export=view&id={FILE_ID}",
+  "images": {
+    "snack-eggshell.webp": "PASTE_FILE_ID_HERE",
+    "snack-mushroom-tartlet.webp": "PASTE_FILE_ID_HERE",
+    "amuse-bouche.webp": "PASTE_FILE_ID_HERE",
+    "bread-course.webp": "PASTE_FILE_ID_HERE",
+    "starter-1.webp": "PASTE_FILE_ID_HERE",
+    "starter-2.webp": "PASTE_FILE_ID_HERE",
+    "egg-royale.webp": "PASTE_FILE_ID_HERE",
+    "between.webp": "PASTE_FILE_ID_HERE",
+    "surprise.webp": "PASTE_FILE_ID_HERE",
+    "main-course.webp": "PASTE_FILE_ID_HERE",
+    "pre-dessert.webp": "PASTE_FILE_ID_HERE",
+    "dessert.webp": "PASTE_FILE_ID_HERE",
+    "friandises.webp": "PASTE_FILE_ID_HERE"
+  }
+}
