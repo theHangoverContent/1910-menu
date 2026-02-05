@@ -2,6 +2,14 @@
 
 Full-stack restaurant menu application for 1910 restaurant in Grindelwald, Switzerland with bilingual (EN/DE) support, interactive dish hotspots, and automated hotspot generation.
 
+## 🌐 Live Demo (Static)
+
+**https://thehangovercontent.github.io/1910-menu/**
+
+> ⚠️ **Note:** The GitHub Pages version is static (client-only). For full functionality with API and images, run locally (see below).
+
+> 🔧 **If the link shows README instead of the app:** Go to repository Settings → Pages → Change Source from "Deploy from a branch" to "GitHub Actions", then trigger the workflow from the Actions tab.
+
 ## Quick Start
 
 ### 1. Install Dependencies
