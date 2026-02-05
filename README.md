@@ -239,10 +239,24 @@ npm start
 
 The repository is configured to automatically deploy to GitHub Pages when changes are pushed to the `main` branch.
 
-**Setup (one-time):**
-1. Go to repository Settings → Pages
-2. Set Source to "GitHub Actions"
-3. Push changes to `main` branch to trigger deployment
+**⚠️ IMPORTANT: One-time Setup Required**
+
+If you see the README content instead of the React app at your GitHub Pages URL, you need to configure the Pages source:
+
+1. Go to your repository on GitHub
+2. Click **Settings** (top menu)
+3. Click **Pages** (left sidebar, under "Code and automation")
+4. Under **Build and deployment** → **Source**, select **"GitHub Actions"** (NOT "Deploy from a branch")
+5. Click **Save**
+6. Go to the **Actions** tab and either:
+   - Wait for the next push to `main` branch, OR
+   - Click on "Deploy to GitHub Pages" workflow → "Run workflow" → "Run workflow" (manual trigger)
+
+**🌐 Live Website URL:**
+
+Once deployed, the React app will be available at:
+
+**https://thehangovercontent.github.io/1910-menu/**
 
 **Manual deployment:**
 ```bash
@@ -251,9 +265,12 @@ The repository is configured to automatically deploy to GitHub Pages when change
 git push origin main
 ```
 
-The site will be available at: `https://thehangoverContent.github.io/1910-menu/`
+**Troubleshooting:**
+- If you see README content: Verify GitHub Pages Source is set to "GitHub Actions" (not a branch)
+- If you get 404: Wait 2-3 minutes after deployment, then refresh. Check Actions tab for deployment status.
+- If assets don't load: Clear browser cache or try incognito mode
 
-**Note:** The static GitHub Pages deployment serves only the React client. API endpoints and dynamic features require a backend server (see Local Production Build).
+**Note:** The static GitHub Pages deployment serves only the React client. API endpoints and dynamic features (like hotspot editing) require running the backend server locally (see Local Production Build above).
 
 ## Adding Dish Images
 
